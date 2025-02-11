@@ -2,14 +2,14 @@ class car{
 
     constructor( model) {
 
-       this.model = model;
+       this.model = model; // encapsulation : we can't access the model property from outside the class
 
 
     }
 
-    getModel(){
+    getModel(){  
 
-        return this.model;
+         return this.model; 
 
 
 
@@ -19,8 +19,8 @@ class car{
 }
 
 
-
-
 let myCar = new car('bmw');
 
 console.log(myCar.getModel());  
+
+
