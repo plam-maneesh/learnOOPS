@@ -44,18 +44,6 @@ class Animal {
     this.name = name;
   }
   speak() {
-    con
-    2. Inheritance
-
-Inheritance allows a child class to derive properties and behaviors from a parent class. This avoids redundant code and promotes reusability.
-
-Example:
-
-class Animal {
-  constructor(name) {
-    this.name = name;
-  }
-  speak() {
     console.log(`${this.name} makes a noise.`);
   }
 }
@@ -69,26 +57,6 @@ class Dog extends Animal {
 const dog = new Dog("Rex");
 dog.speak(); // Rex barks.
 
- Inheritance Benefits:
-
-Reduces code duplication.
-
-Establishes a clear hierarchy between classes.
-
-Makes code more scalable and maintainable.
-
-sole.log(`${this.name} makes a noise.`);
-  }
-}
-
-class Dog extends Animal {
-  speak() {
-    console.log(`${this.name} barks.`);
-  }
-}
-
-const dog = new Dog("Rex");
-dog.speak(); // Rex barks.
 ```
 #### Inheritance Benefits:
 
