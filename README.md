@@ -161,15 +161,9 @@ car.startEngine(); // Engine started
 
 Real-World Applications of OOP
 
-**Web Development** – Frameworks like React, Angular, and Vue use OOP principles.
-
-**Game Development** – Objects represent characters, enemies, and game mechanics.
-
 **Software Engineering** – Used in enterprise applications like banking, healthcare, and e-commerce.
 
 **Mobile App Development** – OOP is widely used in Android (Java/Kotlin) and iOS (Swift).**Software Engineering** – Used in enterprise applications like banking, healthcare, and e-commerce.
-
-**Mobile App Development** – OOP is widely used in Android (Java/Kotlin) and iOS (Swift).
 
 ---
 ## Conclusion
