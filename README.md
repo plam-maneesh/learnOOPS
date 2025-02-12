@@ -1,45 +1,24 @@
+# 🚀 Method Overloading vs Method Overriding in OOP
 
-# 🚀 Object-Oriented Programming (OOP) in JavaScript
-
-Object-Oriented Programming (OOP) is a programming paradigm that uses **objects** to design and structure code. JavaScript supports OOP through **classes, objects, inheritance, encapsulation, polymorphism, and abstraction**.
+Understanding **Method Overloading** and **Method Overriding** is crucial for mastering Object-Oriented Programming (OOP). This guide explains both concepts with examples in JavaScript.
 
 ---
 
-## 🔹 1. What is an Object?
-An **object** is a collection of **properties (variables) and methods (functions).**  
-Example:
+## 🔹 1. What is Method Overloading?
+**Method Overloading** allows multiple methods with the **same name** but **different parameters** in the same class.
+
+### ❌ JavaScript Does Not Support Overloading
+Languages like **Java & C++** support method overloading, but **JavaScript does not support it directly**. However, we can **mimic it** using **default/rest parameters**.
+
+### ✅ Example: Simulating Method Overloading in JavaScript
 ```js
-let car = {
-  brand: "Toyota",
-  speed: 120,
-  drive: function () {
-    console.log(`The ${this.brand} is driving at ${this.speed} km/h.`);
-  }
-};
-
-car.drive(); // Output: The Toyota is driving at 120 km/h.
-
-
-
-#  Four Pillars of OOP
-
-## Encapsulation (Data Hiding)
-
-Encapsulation **bundles data and methods together,** restricting direct access.
-Example:
-class Car {
-  #speed; // Private property (Encapsulation)
-
-  constructor(brand, speed) {
-    this.brand = brand;
-    this.#speed = speed;
-  }
-
-  getSpeed() {
-    return this.#speed; // Accessing private property via method
+class MathUtils {
+  add(a, b, c = 0) { // Default parameter used to mimic overloading
+    return a + b + c;
   }
 }
 
-let myCar = new Car("BMW", 150);
-console.log(myCar.getSpeed()); // Output: 150
-
+let math = new MathUtils();
+console.log(math.add(2, 3));    // Output: 5
+console.log(math.add(2, 3, 4)); // Output: 9
+        # learnOOPS
